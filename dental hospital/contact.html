@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0"> 
+	<title> contact page</title>
+  
+		<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+		<div class="nav-links">
+			<ul> 
+				<li><a href="home.html"><b>HOME</b></a></li>
+				<li><a href="services.html"><b>SERVICES</b></a></li>
+				<li><a href="tips.html"><b>DENTAL TIPS</b></a></li>
+				<li><a href="contact.html-"><b>CONTACT US</b></a></li> 
+				</ul>
+				
+		</div>
+</nav>	
+<div class="contain">
+<div class="fanta">
+	<h1 id="title"> booking</h1>
+		<form>
+			<div class="form-input">
+				<div class="coke" id="nameField">
+				<input type="text" placeholder="fullname"/>	
+			</div>
+			
+			<div class="coke">
+				<input type="email" placeholder="email"/>	
+			</div>
+			
+				<div class="coke">
+				<input type="text" placeholder="date of appointmet"/>
+			</div>
+			<div class="btn-field">
+				<button type="button" id="signupBtn">book</button>
+				
+		</div>
+		</form>
+	</div>
+	</div> 
+	
+	
+	<script>
+		`let signupBtn = document.getElementById("signupBtn");
+		let signinBtn = document.getElementById("signinBtn");
+		let nameField = document.getElementById("nameField");
+		let title = document.getElementById("title");
+		
+		
+		signinBtn.onclick = function(){
+			nameField.style.maxHeight = "0";
+			title.innerHTML ="book";
+			signupBtn.classlist.add("disable")
+			signinBtn.classlist.remove("disable")		
+	}
+	signupBtn.onclick = function(){
+			nameField.style.maxHeight = "60";
+			title.innerHTML ="contact";
+			signupBtn.classlist.remove("disable")
+			signinBtn.classlist.add("disable")
+		}
+	
+	
+	</script>
+</body>
